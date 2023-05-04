@@ -18,7 +18,7 @@ function BackgroundCircles({}: Props) {
      }}
     className="relative flex justify-center items-center">
         <div className="border border-[#333333]
-        rounded-full sm:h-[200px] w-[200px] 
+        rounded-full h-[200px] w-[200px] 
         animate-ping absolute mt-52"/>
         <div className="border border-[#333333]
         rounded-full h-[300px] w-[300px]
