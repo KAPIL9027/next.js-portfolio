@@ -22,10 +22,11 @@ function Projects({}: Props) {
   text-gray-500 text-2xl ">Projects</h3>
 
    <div className="relative w-full flex overflow-x-scroll
-   overflow-y-hidden snap-x snap-mandatory z-20">
+   overflow-y-hidden snap-x snap-mandatory z-20
+   scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80">
    {
     projects.map((project,i)=>{
-        return <Link href="https://www.netflix.com/in/">
+        return <a target="_blank" href="https://www.netflix.com/in/" rel="noopener noreferrer">
             <div className="w-screen flex-shrink-0 snap-center flex flex-col
         space-y-5 items-center justify-center p-20 md:p-44 h-[40rem]">
             <motion.img
@@ -43,13 +44,13 @@ function Projects({}: Props) {
             className="w-20 h-20"
             src="https://icon-library.com/images/netflix-icon-transparent/netflix-icon-transparent-29.jpg"/>
             <div className="space-y-10 px-0 md:px-10 max-w-6xl">
-                <h4 className="text-4xl font-semibold text-center"><span className="underline decoration-[#F7AB0A]/50">Case Study {i+1} of {projects.length}:</span> UPS Clone</h4>
+                <h4 className="text-2xl sm:text-4xl font-semibold text-center"><span className="underline decoration-[#F7AB0A]/50">Case Study {i+1} of {projects.length}:</span> UPS Clone</h4>
                 <p className="text-lg text-center md:text-left">
                 In this project, I have created a clone of Netflix using only HTML, CSS, and JavaScript. To build a complex movie section, I have used JavaScript DOM and Fetch API, which allows users to play the trailer of a movie or show by just hovering over it.
                 </p>
             </div>
         </div>
-        </Link>
+        </a>
     })
    }
    </div>
