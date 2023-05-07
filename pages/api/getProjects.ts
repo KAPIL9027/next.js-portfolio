@@ -11,7 +11,7 @@ type Data = {
 
 const query = groq
 `
-*[_type == "skill"]{
+*[_type == "project"]{
   ...,
   technologies[]->
 }

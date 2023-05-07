@@ -1,10 +1,14 @@
+import { PageInfo } from '@/typings'
 import { motion } from 'framer-motion'
 import React from 'react'
-motion
-// 
-type Props = {}
+import {urlForImage} from '../sanity/lib/image'
 
-export default function About({}: Props) {
+// 
+type Props = {
+  pageInfo: PageInfo
+}
+
+export default function About({pageInfo}: Props) {
   return (
     <motion.div 
     initial={{opacity: 0}}
@@ -30,7 +34,7 @@ export default function About({}: Props) {
         x: 0,
         opacity: 1
     }}
-    src="https://user-images.githubusercontent.com/76560065/236122578-b071a939-804d-4cd0-9c8c-2a29eb24b96c.jpg"
+    src={urlForImage(pageInfo?.profilePic).url()}
     className="  
     flex-shrink-0 w-32 h-32 sm:w-56 sm:h-56 mt-[7rem]
     rounded-full object-cover md:rounded-lg md:w-[200px] md:h-[400px]
@@ -42,15 +46,7 @@ export default function About({}: Props) {
         <span className="underline decoration-[#F7AB0A]/50">
         little</span> background</h4>
         <p className="text-sm">
-        Aws Certified Cloud Practitioner and full stack web developer 
-        with experience in Node.js, 
-        React.js, Express.js, MongoDb, 
-        JavaScript, HTML, and CSS. 
-        I have built several full-stack
-         projects including an AI Image
-          Generator using OpenAI's API,
-           a web chatting application, 
-           a To-Do app, and a social media platform. Proficient in Java programming and certified in Java through HackerRank. Strong problem-solving skills with over 550+ solved data structures and algorithms problems on Leetcode. Passionate about learning new technologies and proficient in core computer science subjects including Operating Systems, DBMS, and Software Engineering.
+         {pageInfo?.backgroundInformation}
         </p>
     </div>
     </motion.div>

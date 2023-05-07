@@ -1,8 +1,11 @@
 import React from 'react'
-import Experience from './Experience'
-type Props = {}
+import ExperienceCard from './ExperienceCard'
+import { Experience } from '@/typings'
+type Props = {
+  experiences: Experience[]
+}
 
-export default function WorkExperience({}: Props) {
+export default function WorkExperience({experiences}: Props) {
   return (
     <div className="h-screen flex
       relative flex-col
@@ -12,11 +15,13 @@ export default function WorkExperience({}: Props) {
         <h3 className="absolute top-20 uppercase tracking-[20px]
     text-gray-500 text-2xl ">Experience</h3>
             
-    <div className="w-full mt-[3rem] z-40 relative flex space-x-10 p-10 snap-x snap-mandatory overflow-x-scroll
+    <div className="w-full mt-[5rem] z-40 relative flex space-x-10 p-10 snap-x snap-mandatory overflow-x-scroll
     scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80">
-        <Experience/>
-        <Experience/>
-        <Experience/>
+        {
+          experiences.map((experience)=>{
+             return <ExperienceCard key={experience._id} experience={experience}/>
+          })
+        }
     </div>
     </div>
   )

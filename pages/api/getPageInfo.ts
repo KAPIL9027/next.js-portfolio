@@ -5,7 +5,7 @@ import { PageInfo,Social } from '@/typings'
 // import {PageInfo, Social} from "../../typings";
 
 type Data = {
-    pageInfo: PageInfo[]
+    pageInfo: PageInfo
   }
   
 
@@ -18,6 +18,6 @@ export default async function handler(
     req: NextApiRequest,
     res: NextApiResponse<Data>
   ) {
-     const pageInfo: PageInfo[] = await client.fetch(query)
+     const pageInfo: PageInfo = await client.fetch(query)
      res.status(200).json({pageInfo})
   }

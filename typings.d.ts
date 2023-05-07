@@ -28,6 +28,7 @@ export interface Social extends SanityBody{
 export interface PageInfo extends SanityBody{
     _type: "pageinfo";
     address: string;
+    name: string;
     backgroundInformation: string;
     email: string;
     role: string;
