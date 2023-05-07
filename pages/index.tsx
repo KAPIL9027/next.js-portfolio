@@ -31,7 +31,7 @@ export default function Home({pageInfo, experiences,skills,projects,socials}: Pr
     snap-mandatory overflow-y-scroll overflow-x-hidden overflow-scroll z-0
     scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80">
       <Head>
-        <title>Kapil's Portfolio</title>
+        <title>Kapil Portfolio</title>
       </Head>
      
       <Header socials={socials}/>
