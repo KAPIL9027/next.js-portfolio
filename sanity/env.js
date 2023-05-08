@@ -2,8 +2,7 @@
 export const apiVersion =
   process.env.NEXT_PUBLIC_SANITY_API_VERSION || '2023-05-06'
 
-export const dataset = "production" ;
-export const projectId = "arb23gpi";
-export const useCdn = false
+export const dataset = process.env.NEXT_PUBLIC_SANITY_DATASET || "production" ;
+export const projectId = process.env.NEXT_PUBLIC_SANITY_PROJECT_ID;
+export const useCdn = process.env.NODE_ENV === 'production'
 
-console.log(process.env.NEXT_PUBLIC_SANITY_DATASET);

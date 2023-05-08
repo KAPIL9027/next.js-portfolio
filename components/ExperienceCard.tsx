@@ -8,7 +8,7 @@ type Props = {
 }
 
 export default function ExperienceCard({experience}: Props) {
-     console.log(experience["dateStarted"]);
+     
   return (
     <article className="flex flex-col rounded-2xl
      items-center space-y-7 flex-shrink-0 bg-[#292929] 
