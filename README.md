@@ -1,3 +1,53 @@
+
+
+Portfolio Website
+
+As part of my portfolio project, I have developed a dynamic website using Next.js, a React.js framework, and Typescript. Next.js provides several benefits over traditional React, including server-side rendering, automatic code splitting, and optimized performance. This resulted in faster load times.
+
+The combination of Next.js and TypeScript allowed me to incorporate error checking and type checking functionality that is not available in traditional JavaScript, which improved the reliability and maintainability of my codebase. Additionally, I utilized Sanity.io, a content management system, to manage my personal data and ensure that any updates or changes can be easily made on the server side, without requiring additional code changes.
+
+To enhance the user experience, I incorporated framer motion for animations and used Tailwind CSS, a flexible CSS framework, to minimize repetitive code and enable easy customization of styles. By leveraging groq query language, I was able to directly access data from the Sanity studio.
+
+Finally, I implemented a contact form using react-form hooks that enables users to send emails directly through the website.
+
+
+
+
+
+
+
+
+
+## Tech Stack
+
+**Client:** Next.js, TypeScript
+
+**Backend** Sanity.io
+
+
+## Screenshots
+
+![App Screenshot](https://user-images.githubusercontent.com/76560065/236827360-1d6b946c-74d1-4d48-b97a-ff811c841cc3.png)
+
+![App Screenshot](https://user-images.githubusercontent.com/76560065/236828330-6841c952-94e2-406a-98e9-4956308248d8.png)
+
+![App Screenshot](https://user-images.githubusercontent.com/76560065/236828867-ef639dcb-c824-41f5-91b1-94f7b5324a66.png)
+
+![App Screenshot](https://user-images.githubusercontent.com/76560065/236829322-cf8b6c52-c1a4-42ee-9f40-ff18b65919db.png)
+
+![App Screenshot](https://user-images.githubusercontent.com/76560065/236829421-11bed161-972e-41a3-a1e6-85d7a2bddf2f.png)
+
+![App Screenshot](https://user-images.githubusercontent.com/76560065/236829562-c57d5413-55e7-4c78-a50f-2b2b17e202ab.png)
+
+
+
+## Deployment
+https://next-js-portfolio-xi-tawny.vercel.app/
+
+
+
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
