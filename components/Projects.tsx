@@ -46,7 +46,7 @@ function Projects({projects}: Props) {
                 duration: 1
             }}
             viewport={{once: true}}
-            className=" sm:w-[500px] sm:h-[250px] border cursor-pointer border-[#F7AB0A]"
+            className=" sm:w-[500px] sm:h-[250px] border cursor-pointer hover:rounded-lg hover:border-[0.15rem] border-[#F7AB0A]"
             src={urlForImage(project?.image).url()} />
                 </a>
              <div className=" flex items-center justify-center">
