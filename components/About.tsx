@@ -38,11 +38,11 @@ export default function About({pageInfo}: Props) {
     className="  
     flex-shrink-0 w-32 h-32 sm:w-56 sm:h-56 mt-[7rem]
     rounded-full object-cover md:rounded-lg md:w-[200px] md:h-[400px]
-    xl:w-[300px] xl:h-[400px]"
+    xl:w-[300px] mb-1 xl:h-[400px]"
     />
 
     <div className="space-y-10 px-0 md:px-10">
-        <h4 className="text-[1.5rem] sm:text-3xl font-semibold">Here is a {" "}
+        <h4 className="text-[1.2rem] sm:text-3xl font-semibold">Here is a {" "}
         <span className="underline decoration-[#F7AB0A]/50">
         little</span> background</h4>
         <p className="text-sm">
